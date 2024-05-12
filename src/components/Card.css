@@ -1,0 +1,53 @@
+.Card{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;  
+    overflow: hidden;
+    cursor: pointer;
+    /* box-shadow: 10px 10px 30px; */
+  }
+  
+  img{
+    width: 100%;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  
+  .Content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    color: black;
+    background: #ADBBDA;
+    text-align: center;
+    position: absolute;     
+    bottom: -40%;    
+    left: 0;      
+    width: 100%; 
+    transition: 0.3s ease;
+    margin:0; 
+    padding:0;
+  }
+  
+  .Content>h4{
+    color: #0e4eef;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .Card:hover .Content{
+    position: absolute;   
+    left: 0;   
+    bottom: 10%;   
+    width: 100%;
+  }
+  
+  .Card:hover img{
+    transform: scale(1.2);
+  }
+  
